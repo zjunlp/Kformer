@@ -5,7 +5,6 @@ Code for our paper ***[Kformer: Knowlede Injection in Transformer Feed-Forward L
 The project is based on [Fairseq](https://github.com/pytorch/fairseq).
 
 ## Requirements
-==========
 To install requirements:
 
 ```
@@ -14,7 +13,6 @@ cd fairseq
 ```
 
 ## Download Model
-==========
 ```
 mkdir models
 cd models
@@ -26,7 +24,6 @@ tar -zxvf roberta.base.tar.gz
 You can download the data from [ZJU Cloud](https://pan.zju.edu.cn/share/486968b763a8bd334360556dc0) and put it under the `.\data\`.
 
 ## Run the experiments
-==========
 
 ### Finetuning
 
