@@ -4,7 +4,7 @@ Code for our paper ***[Kformer: Knowlede Injection in Transformer Feed-Forward L
 
 The project is based on [Fairseq](https://github.com/pytorch/fairseq).
 
-Requirements
+## Requirements
 ==========
 To install requirements:
 
@@ -13,7 +13,7 @@ cd fairseq
 ./setup.sh
 ```
 
-Download Model
+## Download Model
 ==========
 ```
 mkdir models
@@ -22,12 +22,15 @@ wget https://dl.fbaipublicfiles.com/fairseq/models/roberta.base.tar.gz
 tar -zxvf roberta.base.tar.gz
 ```
 
-Run the experiments
+## Data
+You can download the data from [ZJU Cloud](https://pan.zju.edu.cn/share/486968b763a8bd334360556dc0) and put it under the `.\data\`.
+
+## Run the experiments
 ==========
 
-## Finetuning
+### Finetuning
 
-### Social IQA
+#### Social IQA
 
 Use the command below to finetune SocialIQA on Kformer. You can change the layer to inject by editing the arg `--knowledge_layer`.
  `--knowledge_layer` contains two arguments [a,b) denoting the interval of the layer of Roberta.
@@ -36,7 +39,7 @@ Use the command below to finetune SocialIQA on Kformer. You can change the layer
 ./fairseq/run_social.sh
 ```
 
- ### MedQA
+ #### MedQA
 
 Use the command below to finetune MedQA on Kformer.
 
@@ -44,7 +47,7 @@ Use the command below to finetune MedQA on Kformer.
 ./fairseq/run_med.sh
 ```
 
-## Evaluation
+### Evaluation
 Use the following command to evalute the finetuned model. Set the `--knowledge_layer` the same as the arg during finetuning.
 
 ```
