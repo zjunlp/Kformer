@@ -30,7 +30,7 @@ The data we provide here is the question with the retrieved knowledge using bm25
 #### Social IQA
 
 Use the command below to finetune SocialIQA on Kformer. You can change the layer to inject by editing the arg `--knowledge_layer`.
- `--knowledge_layer` contains two arguments [a,b) denoting the interval of the layer of Roberta. You need to change [this line](https://github.com/zjunlp/Kformer/blob/main/fairseq/fairseq/modules/transformer_sentence_encoder.py#L263) to change the number of the knowledge used fro infusion.
+ `--knowledge_layer` contains two arguments [a,b) denoting the interval of the layer of Roberta. You need to change [this line](https://github.com/zjunlp/Kformer/blob/main/fairseq/fairseq/modules/transformer_sentence_encoder.py#L263) to change the number of the knowledge used for infusion.
 
 ```shell
 ./fairseq/run_social.sh
