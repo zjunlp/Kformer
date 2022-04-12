@@ -22,7 +22,7 @@ tar -zxvf roberta.base.tar.gz
 
 ## Data
 You can download the data from [ZJU Cloud](https://pan.zju.edu.cn/share/486968b763a8bd334360556dc0) and put it under the `.\data\`.
-
+The data we provide here is the question with the retrieved knowledge using bm25.
 ## Run the experiments
 
 ### Finetuning
@@ -30,7 +30,7 @@ You can download the data from [ZJU Cloud](https://pan.zju.edu.cn/share/486968b7
 #### Social IQA
 
 Use the command below to finetune SocialIQA on Kformer. You can change the layer to inject by editing the arg `--knowledge_layer`.
- `--knowledge_layer` contains two arguments [a,b) denoting the interval of the layer of Roberta.
+ `--knowledge_layer` contains two arguments [a,b) denoting the interval of the layer of Roberta. You need to change [this line](https://github.com/zjunlp/Kformer/blob/main/fairseq/fairseq/modules/transformer_sentence_encoder.py#L263) to change the number of the knowledge used fro infusion.
 
 ```shell
 ./fairseq/run_social.sh
