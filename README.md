@@ -1,6 +1,6 @@
 # Kformer
 
-Code for our paper ***[Kformer: Knowlede Injection in Transformer Feed-Forward Layers](https://arxiv.org/pdf/2201.05742.pdf)***
+Code for our NLPCC 2022 paper ***[Kformer: Knowlede Injection in Transformer Feed-Forward Layers](https://arxiv.org/pdf/2201.05742.pdf)***
 
 The project is based on [Fairseq](https://github.com/pytorch/fairseq).
 
@@ -61,7 +61,7 @@ Please give us a :star: and cite our paper as
 ```bibtex
 @article{Yao2022KformerKI,
   title={Kformer: Knowledge Injection in Transformer Feed-Forward Layers},
-  author={Yunzhi Yao and Shaohan Huang and Ningyu Zhang and Li Dong and Furu Wei and Huajun Chen},
+  author={Yunzhi Yao and Shaohan Huang and Li Dong and Furu Wei and Huajun Chen and Ningyu Zhang},
   journal={ArXiv},
   year={2022},
   volume={abs/2201.05742}
