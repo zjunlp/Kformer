@@ -4,6 +4,9 @@ Code for our NLPCC 2022 paper ***[Kformer: Knowlede Injection in Transformer Fee
 
 The project is based on [Fairseq](https://github.com/pytorch/fairseq).
 
+
+<div align=center><img src="model.png" width="40%" height="40%" /></div>
+
 ## Requirements
 To install requirements:
 
